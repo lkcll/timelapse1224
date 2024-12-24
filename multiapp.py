@@ -2,8 +2,8 @@
 """
 import streamlit as st
 
-# app_state = st.experimental_get_query_params()
-# app_state = {k: v[0] if isinstance(v, list) else v for k, v in app_state.items()} # fetch the first item in each query string as we don't have multiple values for each query string key in this example
+app_state = st.experimental_get_query_params()
+app_state = {k: v[0] if isinstance(v, list) else v for k, v in app_state.items()} # fetch the first item in each query string as we don't have multiple values for each query string key in this example
 
 
 class MultiApp:
